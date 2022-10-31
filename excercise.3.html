@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>photo gallery</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-rows: repeat(9, 50vh);
+        grid-gap: 2px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      img:hover {
+        opacity: 0.9;
+        transform: scale(1.02);
+      }
+      @media screen and (min-width: 768px) and (max-width: 1024px) {
+        .container {
+          display: grid;
+          grid-template: repeat(4, 250px) / repeat(2, auto);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .container {
+          display: grid;
+          grid-template-columns: auto auto auto;
+          grid-template-areas: "1 2 3" "4 5 6 " "7 8 9";
+        }
+        .box-3 {
+          grid-column-start: 3;
+          grid-column-end: 1;
+          grid-row-start: 1;
+          grid-row-end: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">
+        <img
+          src="https://images.unsplash.com/photo-1560272564-c83b66b1ad12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=449&q=80"
+        />
+      </div>
+      <div class="box box-2">
+        <img
+          src="https://www.shutterstock.com/image-vector/3d-isometric-view-gym-equipments-600w-1130042291.jpg?2"
+        />
+      </div>
+      <div class="box box-3">
+        <img
+          src="https://www.shutterstock.com/image-photo/traveler-relax-on-mountain-edge-600w-1442230613.jpg?3"
+        />
+      </div>
+      <div class="box box-4">
+        <img
+          src="https://www.shutterstock.com/image-photo/climber-backpack-on-top-sunny-600w-699391516.jpg?4"
+        />
+      </div>
+      <div class="box box-5">
+        <img
+          src="https://www.shutterstock.com/image-photo/italy-bergamo-nov-2-2021-600w-2069815538.jpg?5"
+        />
+      </div>
+      <div class="box box-6">
+        <img src="https://images5.alphacoders.com/521/521476.jpg?6" />
+      </div>
+      <div class="box box-7">
+        <img
+          src="https://assets.goal.com/v3/assets/bltcc7a7ffd2fbf71f5/bltc85f6ecb192fcffd/61878995637e8510120a11c7/28bb4f02de23a4356d60783efd080a67a1be4c79.jpg?quality=80&format=pjpg&auto=webp&width=1000?7"
+        />
+      </div>
+      <div class="box box-8">
+        <img
+          src="https://c4.wallpaperflare.com/wallpaper/993/19/712/sachin-tendulkar-god-of-cricket-wallpaper-preview.jpg?8"
+        />
+      </div>
+      <div class="box box-9">
+        <img src="https://images4.alphacoders.com/968/96814.jpg?9" />
+      </div>
+    </div>
+  </body>
+</html>
