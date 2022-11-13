@@ -3,7 +3,7 @@ $name = $_post['name'];
 $visiors_email = $_post['email']
 $message = $_post['messege']
 
-$email_from ='';
+$email_from ='https://boisterous-seahorse-bf6918.netlify.app';
 $email_subject ='new form';
 $email_body = "user name:$name.n/".
               "user email:$email.n/".
@@ -15,6 +15,6 @@ $headers = "reply_to:$visitors_email \r\n";
 
 mail($to,$email_body,$headers);
 
-header("location: contact.html");
+header("location:https://boisterous-seahorse-bf6918.netlify.app");
 
 ?>
