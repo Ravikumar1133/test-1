@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university wesite design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/66f0cd4d63.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <section class="sub-header" data-aos="fade-down">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav__links" id="navlinks">
+          <i class="fa fa-times fa-2x" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-2x" onclick="showmenu()"></i>
+      </nav>
+      <h1>Contact US</h1>
+    </section>
+    <!-- ---------------------------------------contact us--------------------------------------- -->
+    <section class="location" data-aos="fade-down">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31360.051090826633!2d78.72948844999999!3d10.7339904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baa8b741416af05%3A0xa80ddbcfc7c85d9e!2sGundur%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1668323663665!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact__us">
+      <div class="row">
+        <div class="con__col" data-aos="fade-right">
+          <div>
+            <i class="fa-solid fa-home fa-2x ic"></i>
+            <span>
+              <h5>xyz road ,abc building</h5>
+              <p>trichy,tamilnadu</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone fa-2x ic"></i>
+            <span>
+              <h5>9009090090</h5>
+              <p>available 9am-8pm</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope fa-2x ic"></i>
+            <span>
+              <h5>hulkinthehouse@gmail.com</h5>
+              <p>Mail for further enquiry</p>
+            </span>
+          </div>
+        </div>
+        <div class="con__col" data-aos="fade-left">
+          <form action="form-handler.php" method="post">
+            <input
+              type="text"
+              placeholder="Enter you name"
+              required
+              name="name"
+            />
+            <input
+              type=" email"
+              placeholder="your mail id"
+              required
+              name="email"
+            />
+            <textarea rows="8" placeholder="comment" name="messege"></textarea>
+            <button type="submit" class="hero__btn abt__btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------footer--------------------------------------- -->
+    <section class="footer about--footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in,
+        error assumenda ullam <br />perspiciatis amet vel repellat ipsa beatae
+        facere eius iure dicta, distinctio ducimus hic, similique quam at
+        voluptatem? Ab cumque
+      </p>
+      <div class="footer--icons">
+        <i style="color: blue" class="fa fa-facebook fa-2x"></i>
+        <i style="color: blue" class="fa fa-twitter fa-2x"></i>
+        <i style="color: blue" class="fa fa-instagram fa-2x"></i>
+        <i style="color: blue" class="fa fa-linkedin fa-2x"></i>
+      </div>
+      <p>
+        <i style="color: rgb(224, 83, 52)" class="fa fa-boxes"></i> made by @RK
+      </p>
+    </section>
+
+    <!---------------------------------------- java script for click function ----------------------------------------------------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
