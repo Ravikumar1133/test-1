@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university wesite design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/66f0cd4d63.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sub-header" data-aos="fade-down">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav__links" id="navlinks">
+          <i class="fa fa-times fa-2x" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars fa-2x" onclick="showmenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+    <!-- ---------------------------------------about us --------------------------------------- -->
+    <section class="about-us">
+      <div class="row">
+        <div class="about__coloumn" data-aos="fade-right">
+          <h1>we are the world largest university</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam
+            aperiam maxime iste consequatur hic quam vitae, autem laudantium
+            harum doloremque nisi cupiditate quos odit ullam deleniti deserunt?
+            Minima, rem odit! Velit numquam dignissimos aspernatur aliquid
+            doloribus libero voluptate possimus amet modi totam dolore
+            accusantium itaque quidem eaque ea unde, voluptas nihil quia
+            perspiciatis similique. Rerum fugiat ab omnis exercitationem
+            impedit! Exercitationem earum amet quas consequatur modi enim ullam,
+            ex harum accusamus qui autem quasi nisi odio eveniet totam
+            voluptates inventore doloremque, assumenda fuga debitis perspiciatis
+          </p>
+          <a href="course.html" class="hero__btn abt__btn">Explore Now</a>
+        </div>
+        <div class="about__coloumn" data-aos="fade-left">
+          <img src="images/about.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------------------------------footer--------------------------------------- -->
+    <section class="footer about--footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore in,
+        error assumenda ullam <br />perspiciatis amet vel repellat ipsa beatae
+        facere eius iure dicta, distinctio ducimus hic, similique quam at
+        voluptatem? Ab cumque
+      </p>
+      <div class="footer--icons">
+        <i style="color: blue" class="fa fa-facebook fa-2x"></i>
+        <i style="color: blue" class="fa fa-twitter fa-2x"></i>
+        <i style="color: blue" class="fa fa-instagram fa-2x"></i>
+        <i style="color: blue" class="fa fa-linkedin fa-2x"></i>
+      </div>
+      <p>
+        <i style="color: rgb(224, 83, 52)" class="fa fa-boxes"></i> made by @RK
+      </p>
+    </section>
+
+    <!---------------------------------------- java script for click function ----------------------------------------------------------------->
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
