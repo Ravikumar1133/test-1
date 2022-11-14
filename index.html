@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/66f0cd4d63.js"
       crossorigin="anonymous"
@@ -40,18 +41,20 @@
           ipsa repellendus<br />
           eaque reiciendis odio maxime aut numquam sequi.
         </p>
-        <a href="" class="hero__btn">Visit US to know more</a>
+        <a href="blog.html" class="hero__btn" data-aos="zoom-in"
+          >Visit US to know more</a
+        >
       </div>
     </section>
     <!-- ------------------------course section -  --------------------------------------- -->
-    <section class="course">
+    <section class="course" data-aos="fade-down">
       <h1>courses we offer</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
         exercitationem.
       </p>
       <div class="row">
-        <div class="course__column">
+        <div class="course__column" data-aos="fade-right">
           <h3>intermediate</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
@@ -71,7 +74,7 @@
             eos, nemo excepturi est fuga nihil sunt nostrum ipsa, corporis quia.
           </p>
         </div>
-        <div class="course__column">
+        <div class="course__column" data-aos="fade-left">
           <h3>post-graduate</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem
@@ -90,7 +93,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, odio!
       </p>
       <div class="row">
-        <div class="campus__coloumn">
+        <div class="campus__coloumn" data-aos="fade-right">
           <img src="images/london.png" alt="london" />
           <div class="layer">
             <h3>LONDON</h3>
@@ -102,7 +105,7 @@
             <h3>WASHINGTON</h3>
           </div>
         </div>
-        <div class="campus__coloumn">
+        <div class="campus__coloumn" data-aos="fade-left">
           <img src="images/newyork.png" alt="newyork" />
           <div class="layer">
             <h3>NEWYORK</h3>
@@ -117,7 +120,7 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem,
         nihil.
       </p>
-      <div class="row">
+      <div class="row" data-aos="zoom-in">
         <div class="facilities__coloumnn">
           <img src="images/library.png" alt="library" />
           <h3>World Class Library</h3>
@@ -159,7 +162,7 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, facere?
       </p>
       <div class="row">
-        <div class="testimonial__coloumn">
+        <div class="testimonial__coloumn" data-aos="fade-left">
           <img src="images/user1.jpg" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
@@ -175,7 +178,7 @@
             <i class="fa-regular fa-star fn"></i>
           </div>
         </div>
-        <div class="testimonial__coloumn">
+        <div class="testimonial__coloumn" data-aos="fade-right">
           <img src="images/user2.jpg" />
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto
@@ -194,9 +197,9 @@
       </div>
     </section>
     <!---------------------------------------------- call to action section ----------------------------------------------->
-    <section class="cta">
+    <section class="cta" data-aos="zoom-in">
       <h1>Enroll for various online course <br />anywhere from the world</h1>
-      <a href="" class="hero__btn">Contact US</a>
+      <a href="contact.html" class="hero__btn">Contact US</a>
     </section>
     <!-- --------------------------------------------footer--------------------------------------- -->
     <section class="footer">
@@ -227,6 +230,10 @@
       function hidemenu() {
         navlinks.style.right = "-200px";
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
